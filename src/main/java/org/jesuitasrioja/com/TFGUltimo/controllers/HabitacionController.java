@@ -101,15 +101,15 @@ public class HabitacionController {
 	}
 	
 	
-//	@ApiOperation(value = "Añadir una habitacion", notes = "Con este metodo conseguimos añadir una Habitación.")
-//	@PostMapping("/habitaciones")
-//	public ResponseEntity<?> encontrarHabitacionesDisponibles(@RequestBody ReservaDTO fechas) {
-//
-//		Date fechaEntrada = fechas.getFechaEntrada();
-//		Date fechaSalida = fechas.getFechaSalida();
-//	
-//		return ResponseEntity.status(HttpStatus.OK).body(hs.encontrarHabitacionesDisponibles(fechaEntrada, fechaSalida));
-//	}
+	@ApiOperation(value = "Añadir una habitacion", notes = "Con este metodo conseguimos añadir una Habitación.")
+	@PostMapping("/habitaciones")
+	public ResponseEntity<?> encontrarHabitacionesDisponibles(@RequestBody ReservaDTO fechas) {
+
+		Date fechaEntrada = fechas.getFechaEntrada();
+		Date fechaSalida = fechas.getFechaSalida();
+	
+		return ResponseEntity.status(HttpStatus.OK).body(hs.encontrarHabitacionesDisponibles(fechaEntrada, fechaSalida));
+	}
 
 	/*
 	 * 
