@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ReservaDTO {
-	private Integer id;
 	private Date fechaEntrada;
 	private Date fechaSalida;
 }
