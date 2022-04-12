@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class HabitacionService extends BaseService<Habitacion, Integer, HabitacionRepository>{
-	public List<Habitacion> encontrarHabitacionesDisponibles(Date fechaEntrada, Date fechaSalida) {
-		return this.repositorio.encontrarHabitacionesDisponibles(fechaEntrada, fechaSalida);
-	}
+//	public List<Habitacion> encontrarHabitacionesDisponibles(Date fechaEntrada, Date fechaSalida) {
+//		return this.repositorio.encontrarHabitacionesDisponibles(fechaEntrada, fechaSalida);
+//	}
 }

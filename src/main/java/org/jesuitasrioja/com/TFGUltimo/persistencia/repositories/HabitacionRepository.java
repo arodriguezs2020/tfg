@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface HabitacionRepository extends JpaRepository<Habitacion, Integer>{
-	@Query(value = "SELECT h FROM Habitaciones h WHERE NOT EXISTS (SELECT null FROM Reserva r WHERE r.habitacion = h.id AND ?2 <= r.fechaEntrada AND ?1 >= r.fechaSalida)")
-	List<Habitacion> encontrarHabitacionesDisponibles(Date fechaInicio, Date fechaFin);
+//	@Query(value = "SELECT h FROM Habitaciones h WHERE NOT EXISTS (SELECT null FROM Reserva r WHERE r.habitacion = h.id AND ?2 <= r.fechaEntrada AND ?1 >= r.fechaSalida)")
+//	List<Habitacion> encontrarHabitacionesDisponibles(Date fechaInicio, Date fechaFin);
 }
