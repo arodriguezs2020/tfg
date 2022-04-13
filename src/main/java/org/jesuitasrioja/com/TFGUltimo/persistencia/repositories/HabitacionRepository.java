@@ -12,5 +12,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface HabitacionRepository extends JpaRepository<Habitacion, Integer>{
 	@Query(value = "select h from Habitaciones h")
-	List<Habitacion> encontrarHabitacionesDisponibles(@Param("fecha1")Date fechaInicio,@Param("fecha2") Date fechaFin);
+	List<Habitacion> encontrarHabitacionesDisponibles();
 }
