@@ -33,8 +33,8 @@ public class Reserva implements Serializable{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	private String nombre;
-	private Date fechaEntrada;
-	private Date fechaSalida;
+	private Date entrada;
+	private Date salida;
 	private String paisOrigen;	
 	private String horario;
 	private Boolean tranfer;
