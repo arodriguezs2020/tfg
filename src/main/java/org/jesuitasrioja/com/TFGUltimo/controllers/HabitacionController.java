@@ -108,7 +108,7 @@ public class HabitacionController {
 		Date fechaEntrada = fechas.getEntrada();
 		Date fechaSalida = fechas.getSalida();
 	
-		return ResponseEntity.status(HttpStatus.OK).body(hs.encontrarHabitacionesDisponibles());
+		return ResponseEntity.status(HttpStatus.OK).body(hs.encontrarHabitacionesDisponibles(fechaEntrada, fechaSalida));
 	}
 
 	/*
