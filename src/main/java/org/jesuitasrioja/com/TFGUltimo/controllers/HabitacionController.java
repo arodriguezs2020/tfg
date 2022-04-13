@@ -105,8 +105,8 @@ public class HabitacionController {
 	@PostMapping("/habitaciones")
 	public ResponseEntity<?> encontrarHabitacionesDisponibles(@RequestBody ReservaDTO fechas) {
 
-		Date fechaEntrada = fechas.getFechaEntrada();
-		Date fechaSalida = fechas.getFechaSalida();
+		Date fechaEntrada = fechas.getEntrada();
+		Date fechaSalida = fechas.getSalida();
 	
 		return ResponseEntity.status(HttpStatus.OK).body(hs.encontrarHabitacionesDisponibles(fechaEntrada, fechaSalida));
 	}
