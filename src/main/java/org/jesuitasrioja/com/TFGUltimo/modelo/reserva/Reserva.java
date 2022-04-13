@@ -35,7 +35,7 @@ public class Reserva implements Serializable{
 	private String nombre;
 	private Date entrada;
 	private Date salida;
-	private String paisOrigen;	
+	private String pais;	
 	private String horario;
 	private Boolean tranfer;
 	private String telefono;

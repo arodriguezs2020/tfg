@@ -89,10 +89,10 @@ public class ReservaController {
 		Reserva r = new Reserva();
 		
 		r.setNombre(nuevaReserva.getNombre());
-		r.setFechaEntrada(nuevaReserva.getFechaEntrada());
-		r.setFechaSalida(nuevaReserva.getFechaSalida());
+		r.setEntrada(nuevaReserva.getEntrada());
+		r.setSalida(nuevaReserva.getSalida());
 		r.setHorario(nuevaReserva.getHorario());
-		r.setPaisOrigen(nuevaReserva.getPaisOrigen());
+		r.setPais(nuevaReserva.getPais());
 		r.setTranfer(nuevaReserva.getTranfer());
 		r.setTelefono(nuevaReserva.getTelefono());
 
