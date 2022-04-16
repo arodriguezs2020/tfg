@@ -27,7 +27,6 @@ public class Hotel implements Serializable{
 	@Include
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
-	private String descripcion;
 	private String photo;
 
 }

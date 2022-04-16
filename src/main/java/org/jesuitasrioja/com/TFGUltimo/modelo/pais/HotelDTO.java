@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 public class HotelDTO {
 
 	private Integer id;
-	private String descripcion;
 	private String photo;
 
 }
